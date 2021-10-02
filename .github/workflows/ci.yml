@@ -20,7 +20,7 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install ccache gcc wget libopenmpi-dev openmpi-bin liblapack-dev 
-        python -m pip install --upgrade pip
+        python -m pip install --upgrade pip 
         pip install numpy scipy mpi4py cython
         git submodule update --init --recursive
         cd adpy && pip install . && cd ..
