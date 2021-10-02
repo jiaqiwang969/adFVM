@@ -24,6 +24,7 @@ jobs:
         python -m pip install --upgrade pip 
         pip install numpy scipy mpi4py cython
         cd adFVM
+        pwd
         git submodule update --init --recursive
         cd adpy && pip install . && cd ..
         make
