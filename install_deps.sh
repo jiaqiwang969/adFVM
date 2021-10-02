@@ -34,7 +34,7 @@ cd $DIR/sources
     #hdf5
     HDF5_VER=1.10.4
     wget https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.10/hdf5-$HDF5_VER/src/hdf5-$HDF5_VER.tar.gz
-    tar xf hdf5-.tar.gz
+    tar xf hdf5-1.10.4.tar.gz
     cd hdf5-$HDF5_VER
     ./configure --enable-shared --enable-parallel
     make
