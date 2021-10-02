@@ -18,6 +18,7 @@ jobs:
 
     - name: Install dependencies
       run: |
+        git init
         sudo apt-get update
         sudo apt-get install ccache gcc wget libopenmpi-dev openmpi-bin liblapack-dev 
         python -m pip install --upgrade pip 
