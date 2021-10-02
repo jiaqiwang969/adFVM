@@ -18,11 +18,12 @@ jobs:
 
     - name: Install dependencies
       run: |
-        git init
+        git clone https://github.com/chaitan3/adFVM.git
         sudo apt-get update
         sudo apt-get install ccache gcc wget libopenmpi-dev openmpi-bin liblapack-dev 
         python -m pip install --upgrade pip 
         pip install numpy scipy mpi4py cython
+        cd adFVM
         git submodule update --init --recursive
         cd adpy && pip install . && cd ..
         make
